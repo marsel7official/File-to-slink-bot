@@ -42,7 +42,7 @@ async def start(b, m):
                         [
                             [
                                 InlineKeyboardButton("𝙹𝙾𝙸𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
-                            ]
+                            ] 
                         ]
                     )
                     
@@ -56,14 +56,11 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_photo(
-            photo="https://telegra.ph/file/ea7cb43ee90f8eb83a4fa.jpg",
+            photo="",
             caption="**ʜᴇʟʟᴏ...⚡\n\nɪᴀᴍ ᴀ sɪᴍᴘʟᴇ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʟɪɴᴋ ᴀɴᴅ sᴛʀᴇᴀᴍ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ.**\n\n**ᴜsᴇ /help ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛsɪʟs\n\nsᴇɴᴅ ᴍᴇ ᴀɴʏ ᴠɪᴅᴇᴏ / ғɪʟᴇ ᴛᴏ sᴇᴇ ᴍʏ ᴘᴏᴡᴇʀᴢ...**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ JOIN CHANNEL ⚡", url="https://t.me/MarselMovie"), InlineKeyboardButton("⚡ UPDATE ⚡", url="https://t.me/MarselUpdates")],
-                [InlineKeyboardButton("📺 24/7 MOVIE 📺", url="https://t.me/MarselMovieGroup"), InlineKeyboardButton("💎 JOIN MARVEL MOVIE 💎", url="https://t.me/MarvelStudioi")],
-                [InlineKeyboardButton("💌 MOVIE BOT💌", url="https://t.me/fuzi_filter_bot")]
-                ]
+                    [InlineKeyboardButton("⚡ JOIN CHANNEL ⚡", url="https://t.me/MarselMovie"), InlineKeyboardButton("⚡ UPDATE ⚡", url="https://t.me/MarselUpdates")] ]
             ),
             
         )
@@ -123,9 +120,9 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.id)
 
-        msg_text = "**ᴛᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡\n\n📧 ғɪʟᴇ ɴᴀᴍᴇ :-\n{}\n {}\n\n💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- {}\n\n♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛ ᴇxᴘɪʀᴇᴅ ♻️\n\n@MarselMovie**"
+        msg_text = "**ᴛᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡\n\\n\n💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- {}\n\n♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛ ᴇxᴘɪʀᴇᴅ ♻️\n\n@MarselMovie**"
         await m.reply_photo(
-            photo="https://telegra.ph/file/ea7cb43ee90f8eb83a4fa.jpg",
+            photo="",
             caption=msg_text.format(file_name, file_size, stream_link),
             
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ ⚡", url=stream_link)]])
@@ -172,15 +169,13 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_photo(
-            photo="https://telegra.ph/file/ea7cb43ee90f8eb83a4fa.jpg",
+            photo="",
             caption="**┣⪼ sᴇɴᴅ ᴍᴇ ᴀɴʏ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛʜᴇɴ ɪ ᴡɪʟʟ ʏᴏᴜ ᴘᴇʀᴍᴀɴᴇɴᴛ sʜᴀʀᴇᴀʙʟᴇ ʟɪɴᴋ ᴏғ ɪᴛ...\n\n┣⪼ ᴛʜɪs ʟɪɴᴋ ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴏʀ ᴛᴏ sᴛʀᴇᴀᴍ ᴜsɪɴɢ ᴇxᴛᴇʀɴᴀʟ ᴠɪᴅᴇᴏ ᴘʟᴀʏᴇʀs ᴛʜʀᴏᴜɢʜ ᴍʏ sᴇʀᴠᴇʀs.\n\n┣⪼ ғᴏʀ sᴛʀᴇᴀᴍɪɴɢ ᴊᴜsᴛ ᴄᴏᴘʏ ᴛʜᴇ ʟɪɴᴋ ᴀɴᴅ ᴘᴀsᴛᴇ ɪᴛ ɪɴ ʏᴏᴜʀ ᴠɪᴅᴇᴏ ᴘʟᴀʏᴇʀ ᴛᴏ sᴛᴀʀᴛ sᴛʀᴇᴀᴍɪɴɢ.\n\n┣⪼ ᴛʜɪs ʙᴏᴛ ɪs ᴀʟsᴏ sᴜᴘᴘᴏʀᴛ ɪɴ ᴄʜᴀɴɴᴇʟ. ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ʀᴇᴀʟᴛɪᴍᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ғᴏʀ ᴇᴠᴇʀʏ ғɪʟᴇs/ᴠɪᴅᴇᴏs ᴘᴏsᴛ../\n\n sᴇɴᴅ 𝟸 ғɪʟᴇs ᴘᴇʀ 𝟻 ᴍɪɴɪᴛᴜᴇs(sᴘᴀᴍ = ʙᴀɴ)\n\n NO DOWNLOAD PORN🔞\n\n\n┣⪼ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ :- /about\n\n\nᴘʟᴇᴀsᴇ sʜᴀʀᴇ ᴀɴᴅ sᴜʙsᴄʀɪʙᴇ**", 
   
         
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("⚡ JOIN CHANNEL ⚡", url="https://t.me/MarselMovie"), InlineKeyboardButton("⚡ UPDATE ⚡", url="https://t.me/MarselUpdates")],
-                [InlineKeyboardButton("📺 24/7 MOVIE 📺", url="https://t.me/MarselMovieGroup"), InlineKeyboardButton("💎 JOIN MARVEL MOVIE 💎", url="https://t.me/MarvalStudioi")],
-                [InlineKeyboardButton("💌 MOVIE BOT💌", url="https://t.me/fuzi_filter_bot")]
+                [InlineKeyboardButton("⚡ JOIN CHANNEL ⚡", url="https://t.me/MarselMovie"), InlineKeyboardButton("⚡ UPDATE ⚡", url="https://t.me/MarselUpdates")]
             ]
         )
     )
@@ -225,8 +220,8 @@ async def about_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_photo(
-            photo="https://telegra.ph/file/ea7cb43ee90f8eb83a4fa.jpg",
-            caption="""<b>sᴏᴍᴇ ʜɪᴅᴅᴇɴ ᴅᴇᴛᴀɪʟs😜</b>
+            photo="",
+            caption="""<b>sᴏᴍᴇ  ᴅᴇᴛᴀɪʟs😜</b>
 
 <b>╭━━━━━━━〔ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
 ┃
@@ -240,8 +235,7 @@ async def about_handler(bot, message):
         
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("⚡ JOIN CHANNEL ⚡", url="https://t.me/MarselMovie"), InlineKeyboardButton("📺 24/7 MOVIE 📺", url="https://t.me/MarselMovieGroup")],
-                [InlineKeyboardButton("💌 MOVIE BOT💌 ", url="https://t.me/fuzi_filter_bot")]
+                [InlineKeyboardButton("⚡ JOIN CHANNEL ⚡", url="https://t.me/MarselMovie"), InlineKeyboardButton("📺 24/7 MOVIE 📺", url="https://t.me/MarselMovieGroup")]
             ]
         )
     )
