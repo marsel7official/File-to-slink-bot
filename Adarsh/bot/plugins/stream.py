@@ -24,7 +24,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n for password send 10rs to `sharundas123@ybl` and send screen shot to @kwicadmin \n\n (for running bot need contributions..unwanted message = ban + report)")
+            ag = await m.reply_text("Now send me password.\n\n for password send 10rs to `sharundas123@ybl` and send screen shot to @Marsel786 \n\n (for running bot need contributions..unwanted message = ban + report)")
             _text = await c.listen(m.chat.id, filters=filters.text, timeout=90)
             if _text.text:
                 textp = _text.text
@@ -50,7 +50,7 @@ async def private_receive_handler(c: Client, m: Message):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(m.chat.id)
         if check_pass== None:
-            await m.reply_text("ʟᴏɢɪɴ ғɪʀsᴛ ᴜsɪɴɢ /login ᴄᴍᴅ(ᴛʏᴘᴇ /login)  \n\n for password send 10rs to `sharundas123@ybl` and send screen shot to @kwicadmin \n\n (for running bot need contributions..unwanted message = ban + report)")
+            await m.reply_text("ʟᴏɢɪɴ ғɪʀsᴛ ᴜsɪɴɢ /login ᴄᴍᴅ(ᴛʏᴘᴇ /login)  \n\n for password send 10rs to `sharundas123@ybl` and send screen shot to @Marsel786 \n\n (for running bot need contributions..unwanted message = ban + report)")
             return
         if check_pass != MY_PASS:
             await pass_db.delete_user(m.chat.id)
@@ -67,7 +67,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == enums.ChatMemberStatus.BANNED:
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="ʏᴏᴜ ᴀʀᴇ 𝙱𝙰𝙽𝙽ᴇᴅ ʙᴇᴄᴀᴜsᴇ ᴏғ ᴠɪᴏʟᴀᴛɪɴɢ ʀᴜʟᴇs🙂../**",
+                    text="ʏᴏᴜ ᴀʀᴇ BANNᴇᴅ ʙᴇᴄᴀᴜsᴇ ᴏғ ᴠɪᴏʟᴀᴛɪɴɢ ʀᴜʟᴇs🙂../**",
                     disable_web_page_preview=True
                 )
                 return 
@@ -88,7 +88,7 @@ async def private_receive_handler(c: Client, m: Message):
             await m.reply_text(e)
             await c.send_message(
                 chat_id=m.chat.id,
-                text="**𝙰𝙳𝙳 𝙵𝙾𝚁𝙲𝙴 𝚂𝚄𝙱 𝚃𝙾 𝙰𝙽𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻**",
+                text="**ADD FORCE SUB TO ANY CHANNEL **",
                 disable_web_page_preview=True)
             return
     try:
@@ -104,7 +104,6 @@ async def private_receive_handler(c: Client, m: Message):
         msg_text ="""
 <b>ʏᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡
 
-<b>📧 ғɪʟᴇ ɴᴀᴍᴇ :- </b> <i><b>{}</b></i>
 
 <b>📦 ғɪʟᴇ sɪᴢᴇ :- </b> <i><b>{}</b></i>
 
@@ -134,7 +133,7 @@ async def channel_receive_handler(bot, broadcast):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(broadcast.chat.id)
         if check_pass == None:
-            await broadcast.reply_text("Login first using /login cmd \n don\'t know the pass? request it from @kwicadmin")
+            await broadcast.reply_text("Login first using /login cmd \n don\'t know the pass? request it from @Marsel_786")
             return
         if check_pass != MY_PASS:
             await broadcast.reply_text("Wrong password, login again")
