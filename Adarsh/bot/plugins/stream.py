@@ -24,7 +24,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n for password send 10rs to `sharundas123@ybl` and send screen shot to @Marsel786 \n\n (for running bot need contributions..unwanted message = ban + report)")
+            ag = await m.reply_text("Now send me password.\n\n for password send 10rs to `sharundas123@ybl` and send screen shot to @kwicadmin \n\n (for running bot need contributions..unwanted message = ban + report)")
             _text = await c.listen(m.chat.id, filters=filters.text, timeout=90)
             if _text.text:
                 textp = _text.text
@@ -104,6 +104,7 @@ async def private_receive_handler(c: Client, m: Message):
         msg_text ="""
 <b>ʏᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡
 
+<b>📧 ғɪʟᴇ ɴᴀᴍᴇ :- </b> <i><b>{}</b></i>
 
 <b>📦 ғɪʟᴇ sɪᴢᴇ :- </b> <i><b>{}</b></i>
 
